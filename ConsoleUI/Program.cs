@@ -11,13 +11,13 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Manager accountingVP = new Manager();
+            IManager accountingVP = new Manager();
 
             accountingVP.FirstName = "Emma";
             accountingVP.LastName = "Stone";
             accountingVP.CalculatePerHourRate(4);
 
-            Employee emp = new CEO();
+            IManaged emp = new Manager();
 
             emp.FirstName = "Iyad";
             emp.LastName = "Shobaki";
